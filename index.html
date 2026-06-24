@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umut Yağız | Profesyonel Trafik Müşavirliği Hizmetleri</title>
+    <title>Umut Yağız | Beşiktaş Profesyonel Trafik Müşavirliği & Tescil Hizmetleri</title>
     
-    <comment-tag id="1"><!-- Inline SVG Favicon (designed dynamic shield logo for browser tab) --></comment-tag id="1" text="SEO'nun en kritik bileşeni meta açıklamaları ve sosyal grafiklerdir. Buraya arama sonuçlarında çıkacak 150-160 karakterlik bir 'meta description', 'keywords', 'canonical' yönlendirmesi ve WhatsApp/sosyal medya paylaşımlarında şık görünmesini sağlayacak 'Open Graph (og:)' etiketleri eklenmelidir. Örnek: <meta name=\"description\" content=\"İstanbul Beşiktaş'ta profesyonel trafik müşavirliği. Umut Yağız ile araç tescil, plaka tahsisi ve ruhsat yenileme işlemlerinizi hızlıca çözün.\">" type="suggestion">
+    <!-- SEO Meta Etiketleri -->
+    <meta name="description" content="İstanbul Beşiktaş'ta profesyonel trafik müşavirliği. Umut Yağız ile araç tescil, özel plaka tahsisi, ruhsat yenileme ve filo işlemlerinizi hızlıca çözün.">
+    <meta name="keywords" content="trafik müşaviri, araç tescil beşiktaş, plaka tahsisi istanbul, ruhsat yenileme, umut yağız trafik, trafik takipçisi">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.umutyagiztrafik.com">
+
+    <!-- Open Graph (Sosyal Medya ve WhatsApp Paylaşım Görünümü) -->
+    <meta property="og:title" content="Umut Yağız | Profesyonel Trafik Müşavirliği Hizmetleri">
+    <meta property="og:description" content="İstanbul Beşiktaş'ta araç tescil, plaka tahsisi ve ruhsat yenileme süreçlerinizde hızlı ve güvenilir çözüm ortağınız.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.umutyagiztrafik.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80&w=600">
+
+    <!-- Tarayıcı Sekme Logosu (Favicon) -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232563eb'/%3E%3Cstop offset='100%25' stop-color='%231e3a8a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M25 5 L42 12 V28 C42 38 25 45 25 45 C25 45 8 38 8 28 V12 Z' fill='url(%23g)'/%3E%3Cpath d='M17 16 C20 23, 23 26, 23 34' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M33 16 C30 23, 27 26, 27 34' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M25 15 V33' fill='none' stroke='%2393c5fd' stroke-width='1.5' stroke-dasharray='3,2'/%3E%3C/svg%3E">
 
     <!-- Google Fonts -->
@@ -13,11 +26,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome Simgeleri -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* --- Temel Ayarlar ve Değişkenler --- */
         :root {
             --primary-color: #0f172a; 
             --secondary-color: #2563eb; 
@@ -46,6 +58,7 @@
             background-color: var(--bg-light);
             color: var(--text-color);
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         .container {
@@ -55,14 +68,14 @@
             padding: 0 24px;
         }
 
-        /* --- Header / Navigasyon --- */
         header {
-            background-color: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(8px);
+            background-color: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(12px);
             box-shadow: 0 1px 10px rgba(15, 23, 42, 0.05);
             position: sticky;
             top: 0;
             z-index: 1000;
+            border-bottom: 1px solid rgba(241, 245, 249, 0.8);
             transition: var(--transition);
         }
 
@@ -73,7 +86,7 @@
             padding: 16px 0;
         }
 
-        /* Logo Stili */
+        /* Logo Tasarımı */
         .brand-logo {
             display: flex;
             align-items: center;
@@ -113,6 +126,7 @@
             margin-top: 2px;
         }
 
+        /* Menü Elemanları */
         .nav-links {
             display: flex;
             list-style: none;
@@ -135,10 +149,14 @@
         .cta-nav {
             background-color: var(--secondary-color);
             color: var(--white) !important;
-            padding: 10px 20px;
+            padding: 10px 22px;
             border-radius: 8px;
             font-weight: 600;
             box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
         }
 
         .cta-nav:hover {
@@ -147,7 +165,7 @@
             box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
         }
 
-        /* Hamburger Menu (Mobil) */
+        /* Mobil Hamburger Butonu */
         .menu-toggle {
             display: none;
             background: none;
@@ -155,6 +173,56 @@
             color: var(--primary-color);
             font-size: 24px;
             cursor: pointer;
+            padding: 6px;
+            border-radius: 6px;
+            transition: var(--transition);
+        }
+
+        .menu-toggle:hover {
+            background-color: #f1f5f9;
+        }
+
+        /* Mobil Açılır Menü Penceresi */
+        .mobile-drawer {
+            position: fixed;
+            top: 76px;
+            left: 0;
+            width: 100%;
+            background-color: var(--white);
+            box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.08);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            transform: translateY(-150%);
+            opacity: 0;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+            z-index: 999;
+            border-bottom: 1px solid #f1f5f9;
+            pointer-events: none;
+        }
+
+        .mobile-drawer.active {
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .mobile-drawer a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 16px;
+            padding: 10px 0;
+            border-bottom: 1px solid #f8fafc;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .mobile-drawer .cta-nav {
+            justify-content: center;
+            margin-top: 10px;
         }
 
         /* --- Hero Alanı --- */
@@ -612,10 +680,10 @@
 
         @media (max-width: 768px) {
             .nav-links {
-                display: none; /* Basitleştirilmiş mobil sürüm için gizleme */
+                display: none;
             }
             .menu-toggle {
-                display: block; /* Opsiyonel mobil açıcı butonu */
+                display: block;
             }
             .hero h1 {
                 font-size: 36px;
@@ -632,7 +700,7 @@
             }
         }
     </style>
-<comment-tag id="2"></head></comment-tag id="2" text="Google botlarının işletmeyi yerel olarak tanıması için 'JSON-LD Yerel İşletme (LocalBusiness)' şeması bu alana entegre edilmelidir. Bu kod sayesinde Google arama sonuçlarında işletmenin telefon numarası, Beşiktaş/İstanbul konumu ve çalışma alanları 'Zengin Sonuçlar' (Rich Snippets) olarak görünecektir. Örnek JSON-LD: <script type=\"application/ld+json\">{ \"@context\": \"https://schema.org\", \"@type\": \"LocalBusiness\", \"name\": \"Umut Yağız Trafik Müşavirliği\", \"address\": { \"@type\": \"PostalAddress\", \"addressLocality\": \"Beşiktaş\", \"addressRegion\": \"İstanbul\", \"addressCountry\": \"TR\" }, \"telephone\": \"+905435777091\", \"email\": \"umut_yagiz@hotmail.com\" }</script>" type="suggestion">
+</head>
 <body>
 
     <!-- Header / Navigasyon -->
@@ -640,7 +708,7 @@
         <div class="container">
             <div class="nav-container">
                 <!-- SVG Logo Entegre Edildi -->
-                <a href="#" class="brand-logo">
+                <a href="#" class="brand-logo" aria-label="Umut Yağız Trafik Müşavirliği">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="44" height="44">
                         <defs>
                             <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -661,15 +729,31 @@
                     </div>
                 </a>
                 
-                <ul class="nav-links">
-                    <li><a href="#hizmetler">Hizmetler</a></li>
-                    <li><a href="#neden-biz">Neden Biz?</a></li>
-                    <li><a href="#iletisim">İletişim</a></li>
-                    <li><a href="tel:+905435777091" class="cta-nav"><i class="fa-solid fa-phone"></i> Hemen Ara</a></li>
-                </ul>
+                <!-- Masaüstü Linkler -->
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#hizmetler">Hizmetler</a></li>
+                        <li><a href="#neden-biz">Neden Biz?</a></li>
+                        <li><a href="#iletisim">İletişim</a></li>
+                        <li><a href="tel:+905435777091" class="cta-nav"><i class="fa-solid fa-phone"></i> Hemen Ara</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobil Hamburger Tetikleyici -->
+                <button class="menu-toggle" id="menuToggleBtn" aria-label="Menüyü Aç">
+                    <i class="fa-solid fa-bars" id="menuIcon"></i>
+                </button>
             </div>
         </div>
     </header>
+
+    <!-- Mobil Açılır Menü Çekmecesi -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <a href="#hizmetler" onclick="toggleMenu()">Hizmetler <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#neden-biz" onclick="toggleMenu()">Neden Biz? <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#iletisim" onclick="toggleMenu()">İletişim <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="tel:+905435777091" class="cta-nav"><i class="fa-solid fa-phone"></i> Hemen Ara</a>
+    </div>
 
     <!-- Hero Giriş Alanı -->
     <section class="hero">
@@ -678,7 +762,7 @@
                 <div class="hero-badge">
                     <i class="fa-solid fa-shield-halved"></i> Güvenilir & Hızlı Çözüm Ortağınız
                 </div>
-                <comment-tag id="3"><h1>Tescil, Plaka ve Trafik Süreçlerinizde <span>Profesyonel Hizmet</span></h1></comment-tag id="3" text="SEO'da en önemli anahtar kelime yerleşim noktası H1 başlığıdır. Sitenin yerel aramalarda yükselebilmesi için Beşiktaş ve İstanbul konum vurgularını H1 başlığına yedirmek harika olacaktır. Örneğin: 'İstanbul Beşiktaş'ta Trafik, Tescil ve Plaka Süreçlerinde <span>Profesyonel Çözümler</span>'" type="suggestion">
+                <h1>İstanbul Beşiktaş'ta Trafik ve Tescil Süreçlerinizde <span>Profesyonel Çözümler</span></h1>
                 <p>Umut Yağız Trafik Müşavirliği olarak, araçlarınızın resmi tüm resmi trafik işlemlerini, muayene, tescil ve ruhsat takiplerini bürokrasiye takılmadan, sizin adınıza kısa sürede tamamlıyoruz.</p>
                 <div class="hero-buttons">
                     <a href="tel:+905435777091" class="btn btn-primary"><i class="fa-solid fa-phone"></i> İletişime Geçin</a>
@@ -693,7 +777,7 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">Neler Yapıyoruz?</span>
-                <comment-tag id="4"><h2 class="section-title">Hızlı ve Güvenli Trafik Çözümleri</h2></comment-tag id="4" text="Alt başlıklar olan H2 taglerinde doğrudan sektörel kelimelerin geçmesi çok değerlidir. Sadece 'Trafik Çözümleri' yerine 'Hızlı ve Güvenli Trafik Müşavirliği Hizmetleri' başlığını kullanmak, arama motorlarının sitenizi 'trafik müşavirliği' kelimesinde daha yukarı konumlandırmasını sağlar." type="suggestion">
+                <h2 class="section-title">Hızlı ve Güvenli Trafik Müşavirliği Hizmetleri</h2>
             </div>
             
             <div class="services-grid">
@@ -860,7 +944,7 @@
         <div class="container">
             <div class="footer-grid">
                 <!-- Footer Logo -->
-                <a href="#" class="brand-logo">
+                <a href="#" class="brand-logo" aria-label="Umut Yağız Trafik Müşavirliği">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="34" height="34">
                         <path d="M25 5 L42 12 V28 C42 38 25 45 25 45 C25 45 8 38 8 28 V12 Z" fill="#64748b" />
                         <path d="M17 16 C20 23, 23 26, 23 34" fill="none" stroke="#0b0f19" stroke-width="3" stroke-linecap="round"/>
@@ -878,12 +962,59 @@
     </footer>
 
     <!-- Sabit WhatsApp İrtibat Butonu -->
-    <comment-tag id="5"><a href="https://wa.me/905435777091?text=Merhaba%20Umut%20Bey,%20trafik%20müşavirliği%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum." class="whatsapp-fixed" target="_blank"></comment-tag id="5" text="Bu tür sadece simge barındıran bağlantılarda Google botları ve ekran okuyucu cihazlar linkin neye yaradığını çözemeyebilir. Erişilebilirlik ve teknik SEO standartları için bu etikete 'aria-label=\"WhatsApp ile İletişime Geçin\"' ve 'title=\"WhatsApp İletişim\"' öznitelikleri eklenmelidir." type="suggestion">
+    <a href="https://wa.me/905435777091?text=Merhaba%20Umut%20Bey,%20trafik%20müşavirliği%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum." 
+       class="whatsapp-fixed" 
+       target="_blank" 
+       aria-label="WhatsApp ile İletişime Geçin" 
+       title="WhatsApp İletişim">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <!-- Basit Etkileşimler için JavaScript -->
+    <!-- Google Yerel İşletme Şeması (Structured Data / Rich Snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Umut Yağız Trafik Müşavirliği",
+      "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80&w=600",
+      "telephone": "+905435777091",
+      "email": "umut_yagiz@hotmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Beşiktaş",
+        "addressRegion": "İstanbul",
+        "addressCountry": "TR"
+      },
+      "url": "https://www.umutyagiztrafik.com"
+    }
+    </script>
+
+    <!-- JavaScript Kodları -->
     <script>
+        // Mobil Menü Açma ve Kapama Mantığı
+        const menuToggleBtn = document.getElementById('menuToggleBtn');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        const menuIcon = document.getElementById('menuIcon');
+
+        menuToggleBtn.addEventListener('click', toggleMenu);
+
+        function toggleMenu() {
+            const isActive = mobileDrawer.classList.contains('active');
+            
+            if (isActive) {
+                mobileDrawer.classList.remove('active');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+                menuToggleBtn.setAttribute('aria-label', 'Menüyü Aç');
+            } else {
+                mobileDrawer.classList.add('active');
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+                menuToggleBtn.setAttribute('aria-label', 'Menüyü Kapat');
+            }
+        }
+
+        // Form Gönderme Mantığı (WhatsApp Entegrasyonlu)
         function handleFormSubmit(event) {
             event.preventDefault();
             
@@ -891,11 +1022,10 @@
             const phone = document.getElementById('phone').value;
             const message = document.getElementById('message').value;
             
-            // Kullanıcıyı WhatsApp'a yönlendirerek yazdığı mesajı otomatik dolduruyoruz
+            // Hazır mesaj şablonu oluşturarak WhatsApp API'sine yönlendiriyoruz
             const formattedMessage = `Merhaba Umut Bey, ben ${name}. Tel: ${phone}. İşlem Talebim: ${message}`;
             const whatsappUrl = `https://wa.me/905435777091?text=${encodeURIComponent(formattedMessage)}`;
             
-            // Kullanıcıyı WhatsApp yönlendirme ekranına alıyoruz
             window.open(whatsappUrl, '_blank');
         }
     </script>
