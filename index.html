@@ -46,6 +46,21 @@
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Arial,Helvetica,sans-serif;color:#475569;background:#f8fafc;line-height:1.65}.container{width:min(1120px,92%);margin:auto}header{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-index:10}.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{text-decoration:none;color:#0f172a;font-size:20px;font-weight:800}.brand small{display:block;color:#64748b;font-size:9px;letter-spacing:1.5px}nav{display:flex;gap:24px;align-items:center}nav a{text-decoration:none;color:#475569;font-weight:600;font-size:14px}.nav-btn{background:#2563eb;color:#fff!important;padding:10px 17px;border-radius:8px}.hero{background:linear-gradient(135deg,#0f172a,#1e293b);color:#fff;padding:100px 0}.hero-inner{max-width:850px;text-align:center;margin:auto}.badge{display:inline-block;padding:7px 14px;border:1px solid rgba(147,197,253,.35);border-radius:30px;color:#93c5fd;font-size:13px;font-weight:700;margin-bottom:20px}.hero h1{font-size:48px;line-height:1.12;margin-bottom:22px}.hero h1 span{color:#60a5fa}.hero p{font-size:18px;color:#dbeafe;max-width:750px;margin:0 auto 30px}.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.btn{display:inline-block;padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:700}.blue{background:#2563eb;color:#fff}.green{background:#10b981;color:#fff}section{padding:80px 0}.white{background:#fff}.heading{text-align:center;max-width:720px;margin:0 auto 45px}.heading span{font-size:13px;color:#2563eb;font-weight:800;text-transform:uppercase;letter-spacing:1.4px}.heading h2{font-size:35px;line-height:1.2;color:#0f172a;margin:8px 0 12px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:28px}.card h3{font-size:20px;color:#0f172a;margin-bottom:10px}.card p{font-size:15px}.card-link{display:inline-block;margin-top:14px;color:#2563eb;text-decoration:none;font-weight:700}.gray .card{background:#fff}.faq-item{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:18px 20px;margin-bottom:12px}.faq-item summary{cursor:pointer;color:#0f172a;font-weight:700}.faq-item p{margin-top:10px}.contact{background:#0f172a;color:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}.contact h2{font-size:35px;margin-bottom:15px}.contact p{color:#cbd5e1}.contact a{color:#fff}.contact-info{margin-top:25px}.contact-info div{margin-bottom:15px}.contact-info strong{display:block;color:#94a3b8;font-size:12px;text-transform:uppercase}.form{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);padding:28px;border-radius:12px}.form label{display:block;font-size:13px;font-weight:700;color:#cbd5e1;margin-bottom:6px}.form input,.form textarea{width:100%;padding:12px;margin-bottom:15px;border-radius:7px;border:1px solid #475569;background:#1e293b;color:#fff}.form textarea{min-height:110px}.form button{width:100%;padding:13px;background:#2563eb;color:#fff;border:0;border-radius:7px;font-weight:700;cursor:pointer}footer{background:#0b1120;color:#94a3b8;text-align:center;padding:25px;font-size:14px}.wa{position:fixed;right:24px;bottom:24px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:24px;z-index:20}@media(max-width:800px){nav{display:none}.grid,.contact-grid{grid-template-columns:1fr}.hero h1{font-size:36px}.heading h2,.contact h2{font-size:29px}}
+
+.mobile-toggle{display:none;width:44px;height:44px;border:0;background:transparent;cursor:pointer;padding:8px;flex-shrink:0}
+.mobile-toggle span{display:block;height:2px;width:26px;background:#0f172a;margin:5px auto;border-radius:2px;transition:.25s}
+.mobile-menu{display:none}
+@media(max-width:800px){
+    .mobile-toggle{display:block}
+    header{position:sticky;top:0}
+    .mobile-menu{position:absolute;left:0;right:0;top:74px;background:#fff;border-top:1px solid #e5e7eb;box-shadow:0 10px 25px rgba(15,23,42,.12);padding:10px 4%;display:none;flex-direction:column}
+    .mobile-menu.open{display:flex}
+    .mobile-menu a{padding:14px 8px;color:#334155;text-decoration:none;font-weight:700;border-bottom:1px solid #f1f5f9}
+    .mobile-menu a:last-child{border-bottom:0}
+    .mobile-menu .mobile-call{margin:10px 0;background:#2563eb;color:#fff;text-align:center;border-radius:8px}
+    .nav{min-height:74px}
+}
+
 </style>
 </head>
 <body>
@@ -60,6 +75,17 @@
 <a href="#iletisim">İletişim</a>
 <a class="nav-btn" href="tel:+905435777091">Hemen Ara</a>
 </nav>
+<button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mobileMenu">
+    <span></span><span></span><span></span>
+</button>
+</div>
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#hizmetler">Hizmetler</a>
+    <a href="/ozel-plaka.html">Özel Plaka</a>
+    <a href="#neden-biz">Neden Biz?</a>
+    <a href="#sss">Sık Sorulanlar</a>
+    <a href="#iletisim">İletişim</a>
+    <a class="mobile-call" href="tel:+905435777091">Hemen Ara</a>
 </div>
 </header>
 
@@ -140,5 +166,35 @@
 <script>
 function sendWhatsApp(e){e.preventDefault();const n=document.getElementById('name').value.trim(),p=document.getElementById('phone').value.trim(),m=document.getElementById('message').value.trim();window.open('https://wa.me/905435777091?text='+encodeURIComponent('Merhaba Umut Bey, ben '+n+'. Tel: '+p+'. İşlem: '+m),'_blank')}
 </script>
+
+<script>
+(function(){
+    const toggle = document.getElementById('mobileToggle');
+    const menu = document.getElementById('mobileMenu');
+    if(!toggle || !menu) return;
+
+    toggle.addEventListener('click', function(){
+        const isOpen = menu.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        toggle.setAttribute('aria-label', isOpen ? 'Menüyü kapat' : 'Menüyü aç');
+    });
+
+    menu.querySelectorAll('a').forEach(function(link){
+        link.addEventListener('click', function(){
+            menu.classList.remove('open');
+            toggle.setAttribute('aria-expanded','false');
+            toggle.setAttribute('aria-label','Menüyü aç');
+        });
+    });
+
+    window.addEventListener('resize', function(){
+        if(window.innerWidth > 800){
+            menu.classList.remove('open');
+            toggle.setAttribute('aria-expanded','false');
+        }
+    });
+})();
+</script>
+
 </body>
 </html>
